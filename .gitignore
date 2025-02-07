@@ -8,3 +8,4 @@
 /dataSources.local.xml
 .angular/
 node_modules/
+.DS_Store

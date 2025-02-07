@@ -1,1 +1,23 @@
-<app-datepicker></app-datepicker>
+<br/>
+<h3>Date Picker</h3>
+<div class="card flex justify-center">
+    <p-datepicker [(ngModel)]="date" dateFormat="{{dateFormat}}"></p-datepicker>
+</div>
+<br/>
+<h3>Timepicker</h3>
+<div class="card flex justify-center">
+    <p-datepicker [(ngModel)]="date" dateFormat="{{timeFormat}}"  [timeOnly]="true" [hourFormat]="timeFormat"></p-datepicker>
+</div>
+
+<hr/>
+<p><b>Selected format: {{dateFormat}}</b></p>
+
+<div class="card flex justify-left">
+    <p-button (click)="setUEFormat()">Set format <b>dd/mm/yy</b> (European zone format) </p-button>
+</div>
+<p></p>
+
+<div class="card flex justify-left">
+    <p-button (click)="setUSFormat()">Set format <b>mm/dd/yy</b> (US zone format) </p-button>
+</div>
+
