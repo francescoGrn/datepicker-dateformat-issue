@@ -1,0 +1,33 @@
+// @import 'assets/styles/layout/layout.scss';
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+
+  @layer components {
+    :root {
+      --wlb-topbar-height: 4rem;
+
+      --wlb-sidebar-width: 19rem;
+      --wlb-sidebar-space: 1rem;
+      --wlb-sidebar-space-negative: auto;
+      --wlb-sidebar-outer-width: calc(var(--wlb-sidebar-width) + var(--wlb-sidebar-space));
+      --wlb-sidebar-top: calc(var(--wlb-topbar-height) + var(--wlb-sidebar-space));
+
+      @media not all and (min-width: 640px) {
+        --wlb-sidebar-width: auto;
+        --wlb-sidebar-other-pos: var(--wlb-sidebar-space);
+      }
+    }
+  }
+
+  @layer utilities {
+    .page-content {
+      padding: 1rem;
+    }
+  }
+}

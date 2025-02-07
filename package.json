@@ -1,0 +1,30 @@
+{
+  "name": "datepicker-dateformat-issue",
+  "version": "0.0.1",
+  "scripts": {
+    "build-themes": "sass --update src/assets/styles/themes/syscons-light/theme.scss:src/assets/styles/themes/syscons-light/theme.css && sass --update src/assets/styles/themes/syscons-dark/theme.scss:src/assets/styles/themes/syscons-dark/theme.css",
+    "ng": "./node_modules/.bin/ng",
+    "start": "./node_modules/.bin/ng serve",
+    "build": "./node_modules/.bin/ng build",
+    "watch": "./node_modules/.bin/ng build --watch --configuration development"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^19.1.4",
+    "@angular/common": "^19.1.4",
+    "@angular/core": "^19.1.4",
+    "@angular/forms": "^19.1.4",
+    "@angular/platform-browser": "^19.1.4",
+    "@angular/platform-browser-dynamic": "^19.1.4",
+    "@primeng/themes": "^19.0.6",
+    "express": "^4.21.2",
+    "primeicons": "^7.0.0",
+    "primeng": "^19.0.6",
+    "tslib": "^2.8.1"
+  },
+  "devDependencies": {
+    "@angular/cli": "^19.1.5",
+    "@angular/compiler-cli": "^19.1.4",
+    "typescript": "~5.7.3"
+  }
+}
